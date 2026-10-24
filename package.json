@@ -1,5 +1,5 @@
 {
-	"name": "your-module-name",
+	"name": "companion-module-advatek-pixlite-mk3",
 	"version": "0.1.0",
 	"main": "dist/main.js",
 	"type": "module",
@@ -16,7 +16,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/bitfocus/companion-module-your-module-name.git"
+		"url": "git+https://github.com/bitfocus/companion-module-advatek-pixlite-mk3.git"
 	},
 	"engines": {
 		"node": "^26",
@@ -45,5 +45,9 @@
 			"yarn lint:raw --fix"
 		]
 	},
-	"packageManager": "yarn@4.18.1"
+	"packageManager": "yarn@4.18.1",
+	"description": "SHOWTime playback, intensity, colour recalls and device monitoring for Advatek PixLite Mk3, with ADAR discovery.",
+	"bugs": {
+		"url": "https://github.com/bitfocus/companion-module-advatek-pixlite-mk3/issues"
+	}
 }
