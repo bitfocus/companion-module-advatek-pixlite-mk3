@@ -1,0 +1,212 @@
+:root {
+  color-scheme: dark;
+}
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+body {
+  font:
+    16px/1.5 "Forma DJR Display",
+    "Century Gothic Pro",
+    "Century Gothic",
+    sans-serif;
+  background: #353436;
+  color: #fff;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 36px 24px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #626164;
+}
+.logo {
+  width: 208px;
+  max-width: 60%;
+  height: auto;
+}
+.context {
+  color: #e8e8e8;
+  font-size: 14px;
+  text-align: right;
+  min-width: 0;
+}
+main {
+  padding-top: 32px;
+}
+h1 {
+  font-size: clamp(26px, 4vw, 36px);
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+p {
+  margin: 0 0 24px;
+}
+.toolbar {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.network {
+  flex: 1;
+  min-width: min(220px, 100%);
+}
+.network span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+button,
+select {
+  font: inherit;
+  border-radius: 4px;
+  padding: 10px 14px;
+  min-height: 46px;
+}
+select {
+  width: 100%;
+  background: #fff;
+  color: #353436;
+  border: 1px solid #fff;
+}
+button {
+  cursor: pointer;
+  background: #f15a2c;
+  color: #111;
+  border: 1px solid #f15a2c;
+  font-weight: bold;
+  white-space: nowrap;
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+button img {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}
+.option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+input {
+  accent-color: #f15a2c;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+#status {
+  min-height: 24px;
+  color: #e8e8e8;
+  margin: 20px 0 12px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td,
+th {
+  text-align: left;
+  padding: 14px 12px;
+  border-bottom: 1px solid #626164;
+  overflow-wrap: anywhere;
+}
+th {
+  font-size: 13px;
+  color: #e8e8e8;
+  font-weight: normal;
+}
+td:nth-child(2),
+td:nth-child(3) {
+  white-space: nowrap;
+  overflow-wrap: normal;
+}
+td:first-child,
+th:first-child {
+  padding-left: 0;
+}
+.results {
+  overflow-x: auto;
+  margin-bottom: 28px;
+}
+details {
+  color: #e8e8e8;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+details p {
+  margin: 12px 0 0;
+  max-width: 80ch;
+}
+summary {
+  cursor: pointer;
+}
+a {
+  color: #fff;
+  text-underline-offset: 4px;
+}
+@media (max-width: 640px) {
+  body {
+    padding: 24px 16px;
+  }
+  header {
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .context {
+    text-align: left;
+  }
+  .toolbar button {
+    width: 100%;
+  }
+  table,
+  tbody,
+  tr,
+  td {
+    display: block;
+  }
+  thead {
+    display: none;
+  }
+  tr {
+    padding: 16px 0;
+    border-bottom: 1px solid #626164;
+  }
+  td {
+    border: 0;
+    padding: 6px 0;
+  }
+  td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    color: #e8e8e8;
+    font-size: 12px;
+  }
+  td button {
+    width: 100%;
+  }
+}
+
+.firmware-warning {
+  display: block;
+  color: #ffb29a;
+  font-size: 12px;
+  margin-top: 4px;
+}

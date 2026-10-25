@@ -1,21 +1,25 @@
 # companion-module-advatek-pixlite-mk3
 
-This community integration uses the controller's HTTP API to operate existing PixLite Mk3 SHOWTime content and report device state. It is intended for operators using a system that has already been configured.
+Control a commissioned PixLite Mk3 from [Bitfocus Companion](https://companion.free/), the control software used to build operator panels for live production and installations.
 
-## Features
+The module discovers controllers with ADAR, plays existing SHOWTime scenes and playlists, controls playback and intensity, recalls static colours and monitors reported state. Use one connection per controller. Playback across controllers is independent.
 
-- Discover controllers on the local network using Advatek's UDP discovery protocol (ADAR).
-- Select existing scenes and playlists, pause or resume playback, restart an item and move through a playlist.
-- Switch to live data, freeze the current frame or blank outputs.
-- Set or adjust pixel intensity and supported auxiliary output intensity.
-- Recall static RGB, RGBW and RGBCCT colours, with white-channel controls matched to the controller configuration.
-- Monitor playback, connection state and statistics, including power telemetry on the Advatek A4-S, through variables and button feedback.
-- Prepare commands offline, use dark or light button presets, and customise buttons with the included image library.
+Start with the [operator help](companion/HELP.md) for connection settings, presets and troubleshooting. Commissioning, recording, content editing and controller settings remain in Advatek software. See [compatibility and testing](docs/LOCAL-TESTING.md) for the tested scope.
 
-Use one Companion connection per controller. Multiple connections can run on the same network; controller playback remains independent. Keep Companion and the controllers on the same subnet for local communication. ADAR discovery can cross subnets where multicast routing is configured.
+## Develop and test
 
-Commissioning, recording, trigger creation and controller settings remain in Advatek PixLite software.
+Use Node 26 and the pinned Yarn version:
 
-**Status:** source contribution in preparation for Bitfocus review.
+```sh
+corepack enable
+yarn install --immutable
+yarn lint
+yarn check:module
+yarn package
+```
 
-[MIT licence](LICENSE)
+Import the resulting `.tgz` through **Modules > Import module package** for local testing. Packaging does not publish the module. The [working example](examples/showtime-demo/README.md) provides Direct operator layouts, both artwork themes and offline preparation for up to three controllers. Controller addresses and credentials start blank. Import it into a disposable Companion profile.
+
+[Contributing](CONTRIBUTING.md) explains the local checks and compatibility rules. The [documentation index](docs/README.md) links to architecture and API mappings. [Saved button images](assets/button-images/README.md) include both themes and every state. Report reproducible problems in the [module issue tracker](https://github.com/bitfocus/companion-module-advatek-pixlite-mk3/issues), with versions and redacted logs.
+
+Source code is [MIT licensed](LICENSE). Third-party artwork retains its notices. Advatek marks and licensed font software retain their separate rights; font software is not distributed.
