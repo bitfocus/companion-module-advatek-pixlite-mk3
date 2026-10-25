@@ -1,53 +1,58 @@
 {
-	"name": "companion-module-advatek-pixlite-mk3",
-	"version": "0.1.0",
-	"main": "dist/main.js",
-	"type": "module",
-	"scripts": {
-		"postinstall": "husky",
-		"format": "prettier -w .",
-		"package": "run build && companion-module-build",
-		"build": "rimraf dist && run build:main",
-		"build:main": "tsc -p tsconfig.build.json",
-		"dev": "tsc -p tsconfig.build.json --watch",
-		"lint:raw": "eslint",
-		"lint": "run lint:raw ."
-	},
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/bitfocus/companion-module-advatek-pixlite-mk3.git"
-	},
-	"engines": {
-		"node": "^26",
-		"yarn": "^4"
-	},
-	"dependencies": {
-		"@companion-module/base": "~2.1.3"
-	},
-	"devDependencies": {
-		"@companion-module/tools": "^3.1.1",
-		"@types/node": "^26.6.4",
-		"eslint": "^10.12.0",
-		"husky": "^9.1.7",
-		"lint-staged": "^17.6.0",
-		"prettier": "^3.9.9",
-		"rimraf": "^6.1.3",
-		"typescript": "~6.0.3",
-		"typescript-eslint": "^8.71.0"
-	},
-	"prettier": "@companion-module/tools/.prettierrc.json",
-	"lint-staged": {
-		"*.{css,json,md,scss}": [
-			"prettier --write"
-		],
-		"*.{ts,tsx,js,jsx}": [
-			"yarn lint:raw --fix"
-		]
-	},
-	"packageManager": "yarn@4.18.1",
-	"description": "SHOWTime playback, intensity, colour recalls and device monitoring for Advatek PixLite Mk3, with ADAR discovery.",
-	"bugs": {
-		"url": "https://github.com/bitfocus/companion-module-advatek-pixlite-mk3/issues"
-	}
+  "name": "companion-module-advatek-pixlite-mk3",
+  "description": "SHOWTime playback, intensity, colour recalls and device monitoring for Advatek PixLite Mk3, with ADAR discovery.",
+  "version": "0.1.0-beta.34",
+  "private": true,
+  "type": "module",
+  "main": "dist/main.js",
+  "license": "MIT",
+  "engines": {
+    "node": "^26",
+    "yarn": "^4"
+  },
+  "scripts": {
+    "artwork:generate": "node scripts/build-artwork.mjs",
+    "artwork:check": "node scripts/build-artwork.mjs --check",
+    "artwork:export": "yarn build && node scripts/export-button-sets.mjs",
+    "build": "yarn build:compile && yarn workspace:check",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p ui/tsconfig.json",
+    "format": "prettier --write src ui scripts companion assets/*.json package.json tsconfig*.json eslint.config.mjs \"*.md\" \"docs/**/*.md\" \"assets/**/*.md\" \"examples/**/*.md\"",
+    "lint": "yarn typecheck && yarn lint:code && yarn lint:format",
+    "package": "yarn build && companion-module-build",
+    "package:dev": "yarn build && companion-module-build --dev",
+    "dev": "tsc -p tsconfig.build.json --watch",
+    "check:module": "yarn build && companion-module-check",
+    "lint:code": "eslint src ui --max-warnings=0",
+    "lint:format": "prettier --check src ui scripts companion assets/*.json package.json tsconfig*.json eslint.config.mjs \"*.md\" \"docs/**/*.md\" \"assets/**/*.md\" \"examples/**/*.md\"",
+    "workspace:build": "yarn build:compile && node scripts/build-example-workspace.mjs",
+    "workspace:check": "node scripts/build-example-workspace.mjs --check",
+    "build:compile": "node scripts/build-discovery-page.mjs && tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@companion-module/base": "2.1.3",
+    "pkijs": "3.4.3"
+  },
+  "devDependencies": {
+    "@companion-module/tools": "3.1.1",
+    "@types/node": "26.6.4",
+    "eslint": "10.12.0",
+    "prettier": "3.9.9",
+    "sharp": "0.35.5",
+    "svgpath": "2.6.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.0",
+    "vite": "8.0.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitfocus/companion-module-advatek-pixlite-mk3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bitfocus/companion-module-advatek-pixlite-mk3/issues"
+  },
+  "packageManager": "yarn@4.18.1",
+  "resolutions": {
+    "@typescript-eslint/tsconfig-utils": "8.71.0",
+    "@typescript-eslint/types": "8.71.0"
+  }
 }
