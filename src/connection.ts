@@ -1,6 +1,6 @@
 import type { ModuleConfig } from "./types.js";
 
-/** Resolve the Connection choice while accepting older saved fields. */
+/** Resolve the selected connection type and protocol fields. */
 export function connectionConfig(config: ModuleConfig): ModuleConfig {
   const mode =
     config.connectionMode ??
@@ -23,17 +23,5 @@ export function connectionOptions(config: ModuleConfig): ModuleConfig {
     // Retain a saved custom CA, but use it only for standard HTTPS.
     ca:
       settings.secure && settings.tlsProfile === "standard" ? settings.ca : "",
-  };
-}
-
-export function upgradeConnection(config: ModuleConfig): ModuleConfig | null {
-  if (config.connectionMode !== undefined) return null;
-  const normalPort = config.secure ? 4443 : 80;
-  const customPort = config.port !== 0 && config.port !== normalPort;
-  return {
-    ...config,
-    connectionMode: config.secure ? (config.tlsProfile ?? "standard") : "http",
-    port: customPort ? config.port : 0,
-    advanced: customPort || !!config.ca,
   };
 }
