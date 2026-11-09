@@ -1,7 +1,7 @@
 {
   "name": "companion-module-advatek-pixlite-mk3",
   "description": "SHOWTime playback, intensity, colour recalls and device monitoring for Advatek PixLite Mk3, with ADAR discovery.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "main": "dist/main.js",

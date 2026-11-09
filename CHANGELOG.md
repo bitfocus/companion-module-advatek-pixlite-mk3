@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- Update release metadata and the example workspace for review submission.
+
 ## 0.1.0
 
 Initial release.
