@@ -5,7 +5,7 @@
   "name": "Advatek PixLite Mk3",
   "shortname": "PixLite",
   "description": "SHOWTime playback, intensity, colour recalls and device monitoring for Advatek PixLite Mk3, with ADAR discovery.",
-  "version": "0.1.0-beta.34",
+  "version": "0.0.0",
   "license": "MIT",
   "repository": "https://github.com/bitfocus/companion-module-advatek-pixlite-mk3",
   "bugs": "https://github.com/bitfocus/companion-module-advatek-pixlite-mk3/issues",
@@ -19,10 +19,10 @@
   "runtime": {
     "type": "node26",
     "api": "nodejs-ipc",
-    "apiVersion": "2.1.3",
+    "apiVersion": "0.0.0",
     "entrypoint": "../dist/main.js"
   },
-  "legacyIds": ["advatek-pixlite"],
+  "legacyIds": [],
   "manufacturer": "Advatek",
   "products": ["PixLite Mk3"],
   "keywords": ["SHOWTime", "playback", "ADAR"]

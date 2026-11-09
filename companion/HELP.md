@@ -19,7 +19,7 @@ Or choose **Find controllers**, select the controller-facing IPv4 interface and 
 
 For ordinary local control, keep Companion and the controller on the same IPv4 subnet. Discovery visibility does not prove that HTTP can reach the address. Routed installations need a suitable route and firewall rules. ADAR uses UDP port `49151` and does not change network settings.
 
-**HTTPS** verifies the controller's Advatek certificate against its pinned root and exact **Device MAC** before API traffic. Discovery supplies the MAC. **HTTPS (custom certificate)** uses standard hostname/IP, purpose and trust verification. Under **Advanced**, use **CA certificate** for a custom issuer or **Port override** for a non-standard port. `0` keeps automatic port selection. Saved custom ports and certificate policies are preserved during upgrades.
+**HTTPS** verifies the controller's Advatek certificate against its pinned root and exact **Device MAC** before API traffic. Discovery supplies the MAC. **HTTPS (custom certificate)** uses standard hostname/IP, purpose and trust verification. Under **Advanced**, use **CA certificate** for a custom issuer or **Port override** for a non-standard port. `0` keeps automatic port selection.
 
 **Device MAC** can also pin an HTTP or custom-certificate connection to a particular controller. **Device statistics** adds supported telemetry; playback status always refreshes automatically. See the [HTTPS guide](https://github.com/bitfocus/companion-module-advatek-pixlite-mk3/blob/main/docs/HTTPS.md) for certificate details.
 
@@ -100,14 +100,6 @@ Save actions with a blank connection address or an offline target. Exact filenam
 Offline or stale presses fail. Commands that wait more than ten seconds before transmission expire and must be pressed again. Waiting commands are cancelled after connection loss or uncertain delivery and are never replayed automatically. Reconnect, inspect state and deliberately issue the required command again.
 
 Use one connection per controller. Several actions on one button send independent requests, so check each unit's feedback. Controllers do not synchronise playback. For ready-made layouts and offline preparation, see the bundled [example workspace](EXAMPLE.md); import it into a spare profile.
-
-## Migrate an earlier preview
-
-Earlier previews used module ID `advatek-pixlite`; this module uses `advatek-pixlite-mk3`. Migration from beta.18 was tested in Companion 5.1.1. Export a configuration backup and keep the old module installed until the migrated controls have been checked.
-
-In Companion 5.1.1, the offered legacy upgrade can fail with **Unknown version**. For each existing connection, open **Change module version > Advanced Options**, select the new **Advatek PixLite Mk3** module, choose its installed version and save. The old preview appears as **Advatek PixLite Mk3 SHOWTime**. This specific module change was tested with linked presets, copied buttons, expressions and saved connection settings; it is not a general conversion between unrelated modules.
-
-Migration preserves page positions and copied styles. Linked presets receive the new feedback and artwork. It does not rearrange an existing show into the Direct operator layout or send output commands on connection.
 
 ## Troubleshooting
 
