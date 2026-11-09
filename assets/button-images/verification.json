@@ -1,0 +1,15 @@
+{
+  "modulePngsVerified": 912,
+  "perTheme": {
+    "fixedButtons": 78,
+    "iconRoles": 36,
+    "states": 4,
+    "pngFiles": 456
+  },
+  "checks": [
+    "saved bytes match module",
+    "SHA-256",
+    "PNG decode and dimensions",
+    "alpha and nonempty icon/label regions"
+  ]
+}

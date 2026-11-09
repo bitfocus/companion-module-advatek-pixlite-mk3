@@ -1,0 +1,339 @@
+{
+  "live": {
+    "icon": "live",
+    "label": "Live\ndata"
+  },
+  "blank": {
+    "icon": "blank",
+    "label": "Blank\noutputs"
+  },
+  "freeze": {
+    "icon": "freeze",
+    "label": "Freeze\nframe"
+  },
+  "pause": {
+    "icon": "pause",
+    "label": "Pause"
+  },
+  "resume": {
+    "icon": "resume",
+    "label": "Resume"
+  },
+  "playlist_previous_item": {
+    "icon": "previous",
+    "label": "Prev\nitem"
+  },
+  "playlist_next_item": {
+    "icon": "next",
+    "label": "Next\nitem"
+  },
+  "playback_restart_item": {
+    "icon": "restart",
+    "label": "Restart\nitem"
+  },
+  "playlist_previous_recorded": {
+    "icon": "previous_recorded",
+    "label": "Prev\nscene"
+  },
+  "playlist_next_recorded": {
+    "icon": "next_recorded",
+    "label": "Next\nscene"
+  },
+  "intensity_increase_1": {
+    "icon": "intensity_up",
+    "label": "+1%\nIntensity"
+  },
+  "intensity_decrease_1": {
+    "icon": "intensity_down",
+    "label": "-1%\nIntensity"
+  },
+  "intensity_increase_5": {
+    "icon": "intensity_up",
+    "label": "+5%\nIntensity"
+  },
+  "intensity_decrease_5": {
+    "icon": "intensity_down",
+    "label": "-5%\nIntensity"
+  },
+  "level_0": {
+    "icon": "level",
+    "label": "0%\nIntensity",
+    "level": 0
+  },
+  "level_25": {
+    "icon": "level",
+    "label": "25%\nIntensity",
+    "level": 25
+  },
+  "level_50": {
+    "icon": "level",
+    "label": "50%\nIntensity",
+    "level": 50
+  },
+  "level_75": {
+    "icon": "level",
+    "label": "75%\nIntensity",
+    "level": 75
+  },
+  "level_100": {
+    "icon": "level",
+    "label": "100%\nIntensity",
+    "level": 100
+  },
+  "release": {
+    "icon": "release",
+    "label": "Release\nintensity"
+  },
+  "colour_Red": {
+    "icon": "colour",
+    "label": "Red",
+    "swatch": "#FF3838"
+  },
+  "colour_Green": {
+    "icon": "colour",
+    "label": "Green",
+    "swatch": "#00B85A"
+  },
+  "colour_Blue": {
+    "icon": "colour",
+    "label": "Blue",
+    "swatch": "#3487FF"
+  },
+  "colour_White RGB": {
+    "icon": "colour",
+    "label": "White RGB",
+    "swatch": "#FFFFFF"
+  },
+  "pause_toggle": {
+    "icon": "pause_toggle",
+    "label": "Pause /\nresume"
+  },
+  "override": {
+    "icon": "override",
+    "label": "Override\nintensity"
+  },
+  "aux1_increase_5": {
+    "icon": "intensity_up",
+    "label": "+5%\nAux 1"
+  },
+  "aux1_decrease_5": {
+    "icon": "intensity_down",
+    "label": "-5%\nAux 1"
+  },
+  "aux1_level_0": {
+    "icon": "level",
+    "label": "0%\nAux 1",
+    "level": 0
+  },
+  "aux1_level_50": {
+    "icon": "level",
+    "label": "50%\nAux 1",
+    "level": 50
+  },
+  "aux1_level_100": {
+    "icon": "level",
+    "label": "100%\nAux 1",
+    "level": 100
+  },
+  "aux1_release": {
+    "icon": "release",
+    "label": "Release\nAux 1"
+  },
+  "aux1_override": {
+    "icon": "override",
+    "label": "Override\nAux 1"
+  },
+  "all_increase_5": {
+    "icon": "intensity_up",
+    "label": "+5%\nAll outs"
+  },
+  "all_decrease_5": {
+    "icon": "intensity_down",
+    "label": "-5%\nAll outs"
+  },
+  "all_level_0": {
+    "icon": "level",
+    "label": "0%\nAll outs",
+    "level": 0
+  },
+  "all_level_50": {
+    "icon": "level",
+    "label": "50%\nAll outs",
+    "level": 50
+  },
+  "all_level_100": {
+    "icon": "level",
+    "label": "100%\nAll outs",
+    "level": 100
+  },
+  "all_release": {
+    "icon": "release",
+    "label": "Release\nAll outs"
+  },
+  "all_override": {
+    "icon": "override",
+    "label": "Override\nAll outs"
+  },
+  "white_W": {
+    "icon": "white_channel",
+    "label": "White W\n100%"
+  },
+  "white_X": {
+    "icon": "white_channel",
+    "label": "White X\n100%"
+  },
+  "palette_1": {
+    "icon": "colour",
+    "label": "Palette\n1"
+  },
+  "palette_2": {
+    "icon": "colour",
+    "label": "Palette\n2"
+  },
+  "palette_3": {
+    "icon": "colour",
+    "label": "Palette\n3"
+  },
+  "palette_4": {
+    "icon": "colour",
+    "label": "Palette\n4"
+  },
+  "palette_5": {
+    "icon": "colour",
+    "label": "Palette\n5"
+  },
+  "palette_6": {
+    "icon": "colour",
+    "label": "Palette\n6"
+  },
+  "palette_7": {
+    "icon": "colour",
+    "label": "Palette\n7"
+  },
+  "palette_8": {
+    "icon": "colour",
+    "label": "Palette\n8"
+  },
+  "palette_9": {
+    "icon": "colour",
+    "label": "Palette\n9"
+  },
+  "palette_10": {
+    "icon": "colour",
+    "label": "Palette\n10"
+  },
+  "palette_11": {
+    "icon": "colour",
+    "label": "Palette\n11"
+  },
+  "palette_12": {
+    "icon": "colour",
+    "label": "Palette\n12"
+  },
+  "media_refresh": {
+    "icon": "media_refresh",
+    "label": "Refresh\nmedia"
+  },
+  "status_refresh": {
+    "icon": "status_refresh",
+    "label": "Refresh\nstatus"
+  },
+  "scene_template": {
+    "icon": "scene",
+    "label": "Play\nscene"
+  },
+  "playlist_template": {
+    "icon": "playlist",
+    "label": "Play\nplaylist"
+  },
+  "scene_inspect": {
+    "icon": "inspect",
+    "label": "Scene\ninfo"
+  },
+  "mix_red": {
+    "icon": "mix_channel",
+    "label": "Red",
+    "swatch": "#FF3434",
+    "compactSwatch": true
+  },
+  "mix_red_up": {
+    "icon": "mix_up",
+    "label": "Red\n+1%"
+  },
+  "mix_red_down": {
+    "icon": "mix_down",
+    "label": "Red\n-1%"
+  },
+  "mix_green": {
+    "icon": "mix_channel",
+    "label": "Green",
+    "swatch": "#00BF63",
+    "compactSwatch": true
+  },
+  "mix_green_up": {
+    "icon": "mix_up",
+    "label": "Green\n+1%"
+  },
+  "mix_green_down": {
+    "icon": "mix_down",
+    "label": "Green\n-1%"
+  },
+  "mix_blue": {
+    "icon": "mix_channel",
+    "label": "Blue",
+    "swatch": "#338CFF",
+    "compactSwatch": true
+  },
+  "mix_blue_up": {
+    "icon": "mix_up",
+    "label": "Blue\n+1%"
+  },
+  "mix_blue_down": {
+    "icon": "mix_down",
+    "label": "Blue\n-1%"
+  },
+  "mix_white": {
+    "icon": "mix_channel",
+    "label": "White W",
+    "swatch": "#FFFFFF",
+    "compactSwatch": true
+  },
+  "mix_white_up": {
+    "icon": "mix_up",
+    "label": "White W\n+1%"
+  },
+  "mix_white_down": {
+    "icon": "mix_down",
+    "label": "White W\n-1%"
+  },
+  "mix_extra": {
+    "icon": "mix_channel",
+    "label": "White X",
+    "swatch": "#FFFFFF",
+    "compactSwatch": true
+  },
+  "mix_extra_up": {
+    "icon": "mix_up",
+    "label": "White X\n+1%"
+  },
+  "mix_extra_down": {
+    "icon": "mix_down",
+    "label": "White X\n-1%"
+  },
+  "mix_recall": {
+    "icon": "mix_recall",
+    "label": "Recall\nmix"
+  },
+  "mix_live": {
+    "icon": "mix_live",
+    "label": "Live\nmix"
+  },
+  "mix_load": {
+    "icon": "mix_load",
+    "label": "Load\noutput"
+  },
+  "mix_prepare": {
+    "icon": "colour",
+    "label": "Prepare\ncolour"
+  }
+}

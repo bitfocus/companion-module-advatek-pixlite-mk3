@@ -1,8 +1,10 @@
 node_modules/
-package-lock.json
-/pkg
-/*.tgz
-/dist
-DEBUG-*
-/.yarn
-/.vscode
+dist/
+pkg/
+test-dist/
+*.tgz
+*.companion-module
+.local/
+coverage/
+.serena/
+/.yarn/

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="pixlite-nonce" content="__PIXLITE_NONCE__" />
+    <title>Advatek | PixLite discovery</title>
+    <!-- STYLE -->
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="__PIXLITE_LOGO__" alt="Advatek Lighting" /><span
+        class="context"
+        >SHOWTime™ for Companion</span
+      >
+    </header>
+    <main>
+      <h1>Connect a PixLite® Mk3</h1>
+      <p>Choose the network connected to your controllers.</p>
+      <div class="toolbar">
+        <label class="network"
+          ><span>Network interface</span
+          ><select id="interfaces"></select
+        ></label>
+        <button id="scan" disabled>
+          <img src="__PIXLITE_SEARCH__" alt="" />Scan network
+        </button>
+      </div>
+      <label class="option"
+        ><input type="checkbox" id="https-defaults" />Use HTTPS defaults (port
+        4443)</label
+      >
+      <p id="status" role="status">Loading interfaces</p>
+      <p id="empty" role="status" hidden>No PixLite devices found</p>
+      <div class="results">
+        <table id="device-table" hidden>
+          <thead>
+            <tr>
+              <th>Controller</th>
+              <th>Address</th>
+              <th>MAC</th>
+              <th>Firmware</th>
+              <th>Select</th>
+            </tr>
+          </thead>
+          <tbody id="devices"></tbody>
+        </table>
+      </div>
+      <details>
+        <summary>Connection help</summary>
+        <p>
+          For local control, keep Companion and the controller on the same IPv4
+          subnet. Discovery can find controllers outside that subnet; connecting
+          still needs a reachable address. Routed networks need a suitable route
+          and firewall rules.
+        </p>
+        <p>
+          HTTPS defaults select port 4443 and the Advatek device certificate
+          profile. Selection fills the address and MAC, and preserves the
+          operator password. Reopen connection settings before editing them.
+        </p>
+        <p>
+          ADAR sends scans to UDP port 49151. Replies return to a temporary port
+          on the Companion computer.
+        </p>
+        <p>
+          Multicast uses the selected interface. Broadcast fallback follows the
+          computer's routing. If a controller is missing, enter its address
+          manually in Companion.
+        </p>
+      </details>
+      <a href="/connections/__PIXLITE_CONNECTION__">Return to Companion</a>
+    </main>
+    <!-- SCRIPT -->
+  </body>
+</html>
