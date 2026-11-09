@@ -2,7 +2,7 @@
 
 The hardware and browser checks below were completed on **25 October 2026** with **0.1.0-beta.34**, the functional baseline for the initial release.
 
-Release **0.1.0** passed lint, TypeScript, the official module checker, packaging and **138 offline regression checks** on **9 November 2026**. The release checks verify empty legacy IDs and upgrade scripts, build-time manifest values, and the regenerated example workspace. Earlier preview-migration checks were replaced by first-release metadata checks.
+Release **0.1.1** passed lint, TypeScript, the official module checker, packaging and **138 offline regression checks** on **9 November 2026**. The release checks verify empty legacy IDs and upgrade scripts, build-time manifest values, and the regenerated example workspace. Earlier preview-migration checks were replaced by first-release metadata checks.
 
 | Area                  | Verified scope                                                                                                                                                                                                                                                                                                                 |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
