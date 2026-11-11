@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.3
+
+- Refresh release wording and manual installation guidance.
+- Remove stale development labels from the compatibility notes.
+- Update the bundled example for version 0.1.3.
+
 ## 0.1.2
 
 - Align build scripts, tooling and formatting with the Bitfocus template.
