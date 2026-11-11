@@ -41,7 +41,7 @@ Media lists and preset names omit file extensions. Scenes and playlists have sep
 - **Pause**, **Resume** and **Toggle pause** control existing playback. The toggle key shows Pause while file playback runs and Resume while paused. PixLite does not report a pause state for every playback operation; a clock on the combined key indicates that this state is unavailable. **Restart current item** restarts its current item.
 - **Next / Previous playlist item** includes built-in playlist entries. **Next / Previous recorded playlist item** skips non-recorded entries.
 - **Live data**, **Blank outputs** and **Freeze output frame** select the required operating mode. There is no general Stop action; choose the desired output behaviour.
-- **Read: Scene metadata** inspects a scene without starting it. Its result is the last explicit inspection, not a playback progress display.
+- **Read: Scene metadata** inspects a scene without starting it. Its variables hold the last explicit inspection for this connection. Inspecting another scene replaces them; they are not a playback progress display.
 
 Start a playlist before navigating it. **Next scene** moves within that playlist, not through the controller's scene directory. Use the action's **Transition fade** where offered; custom values are milliseconds.
 

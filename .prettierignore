@@ -1,3 +1,8 @@
+package.json
+/LICENSE.md
 src/companion/artwork.generated.ts
 src/companion/labelled-artwork.generated.ts
 src/discovery/page.generated.ts
+assets/button-images/dark/manifest.json
+assets/button-images/light/manifest.json
+assets/button-images/verification.json

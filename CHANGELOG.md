@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.2
+
+- Align build scripts, tooling and formatting with the Bitfocus template.
+- Make example exports independent of the build host's gzip OS marker.
+- Distinguish HTTPS connection failures from rejected certificates.
+- Suppress unchanged definition, variable and status updates while retaining freshness checks.
+- Add typed action and feedback schemas, clearer labels and a Connecting state.
+- Use Companion's native rotary-preset detection.
+
 ## 0.1.1
 
 - Update release metadata and the example workspace for review submission.
