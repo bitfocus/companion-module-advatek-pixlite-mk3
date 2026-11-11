@@ -4,9 +4,12 @@ Use Node 26 and `yarn install --immutable`. Keep code typed and protocol handlin
 
 ```sh
 yarn lint
+yarn lint:format
+yarn typecheck
 yarn check:module
 yarn artwork:check
 yarn artwork:export
+yarn workspace:check
 yarn package
 ```
 
@@ -32,7 +35,7 @@ Artwork regeneration/checking requires the separately licensed Forma DJR Display
 | `src/companion`     | Generated artwork, media captions and internal re-exports         |
 | `assets`, `scripts` | Editable sources and reproducible artwork/export tools            |
 
-Actions, feedback, presets, connection fields and upgrade scripts are split into named top-level files under `src/`, following the module template. `tsconfig.build.json` controls emitted output; `tsconfig.json` supplies editor/type-check settings. `yarn dev` watches sources. `lint` uses Bitfocus shared ESLint rules as well as TypeScript and formatting. `build` also checks the generated workspace; use `workspace:build` to regenerate it after a version or preset change.
+Actions, feedback, presets, connection fields and upgrade scripts are split into named top-level files under `src/`, following the module template. `tsconfig.build.json` controls emitted output; `tsconfig.json` supplies editor/type-check settings. `yarn dev` watches sources. `lint` uses Bitfocus shared ESLint rules. Run `typecheck` and `lint:format` separately. `build` cleans and compiles; `workspace:check` checks the generated workspace. Use `workspace:build` to regenerate it after a version or preset change.
 
 ## Invariants
 

@@ -26,7 +26,7 @@ Optional permission/unsupported-path errors suppress that read until reconnect. 
 
 `src/actions.ts`, `src/feedbacks.ts` and `src/presets.ts` define actions, feedback and themed presets. `src/config.ts` owns connection fields; `src/connection.ts` resolves the selected protocol and automatic port before creating a client. Port `0` is stored as automatic, then resolves to HTTP 80 or HTTPS 4443. The selected Connection choice determines the `secure` and `tlsProfile` client fields. `src/upgrades.ts` exports an empty upgrade list for the initial release.
 
-Persisted media IDs are exact filenames, not list positions. W/X, auxiliary planning targets and all twelve palette slots remain configurable offline; execution validates the connected device. Rebuilding definitions preserves saved option IDs.
+Persisted media IDs are exact filenames, not list positions. W/X, auxiliary planning targets and all twelve palette slots remain configurable offline; execution validates the connected device. Rebuilding definitions preserves saved option IDs. A per-instance input key suppresses unchanged definitions. Variables publish only changed values; the freshness timer still expires stale readings. `src/variables.ts` owns labels and units, separately from stable variable IDs.
 
 `src/companion/media-labels.ts` watches resolved action filenames, isolated by connection and control ID. A local `media_name` value feedback supplies a caption without executing an action. Active feedback uses the same selection. Captions omit the extension and shorten only their display text. Multiple distinct media actions show `Multiple media`. Custom user styling is not rewritten.
 
