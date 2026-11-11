@@ -1,8 +1,11 @@
 node_modules/
-dist/
-pkg/
+package-lock.json
+/dist
+/pkg
+DEBUG-*
+/.vscode
 test-dist/
-*.tgz
+/*.tgz
 *.companion-module
 .local/
 coverage/

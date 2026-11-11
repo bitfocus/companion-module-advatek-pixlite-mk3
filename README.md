@@ -1,5 +1,7 @@
 # companion-module-advatek-pixlite-mk3
 
+> This Labs repository contains a copy of the module submitted to the [Bitfocus repository](https://github.com/bitfocus/companion-module-advatek-pixlite-mk3) for review. See the [submission PR](https://github.com/bitfocus/companion-module-advatek-pixlite-mk3/pull/1) for its review status.
+
 Control a commissioned PixLite Mk3 from [Bitfocus Companion](https://companion.free/), the control software used to build operator panels for live production and installations.
 
 The module discovers controllers with ADAR, plays existing SHOWTime scenes and playlists, controls playback and intensity, recalls static colours and monitors reported state. Use one connection per controller. Playback across controllers is independent.
@@ -14,7 +16,10 @@ Use Node 26 and the pinned Yarn version:
 corepack enable
 yarn install --immutable
 yarn lint
+yarn lint:format
+yarn typecheck
 yarn check:module
+yarn workspace:check
 yarn package
 ```
 
