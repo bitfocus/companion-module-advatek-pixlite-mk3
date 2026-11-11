@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.0
+
+- Promote the approved module to the stable release channel.
+- Update the bundled example for version 1.0.0.
+- Runtime behaviour is unchanged from version 0.1.2.
+
 ## 0.1.3
 
 - Refresh release wording and manual installation guidance.
