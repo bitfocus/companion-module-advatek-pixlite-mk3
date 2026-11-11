@@ -10,7 +10,7 @@ New to Companion? Its [connection guide](https://github.com/bitfocus/companion/b
 
 ## Connect
 
-1. Install the module from Companion's **Modules** page. For a supplied test package, use **Import module package** and select its `.tgz`.
+1. Install the module from Companion's **Modules** page. For manual installation, choose **Import module package** and select the release `.tgz`.
 2. Add **Advatek PixLite Mk3** in **Connections**. Give it a useful label, such as `Lobby`.
 3. Enter the **Controller address** and **Operator password**, then choose **Connection**: HTTP, HTTPS, or HTTPS (custom certificate). Use the host only, without a URL scheme or path. Normal ports are automatic: HTTP `80`, HTTPS `4443`.
 4. Save and wait for the connection to become ready.
