@@ -4,11 +4,12 @@ Start with the guide that matches what you want to do. The operator pages descri
 
 ## Set up and operate
 
-| Guide                                         | Use it for                                                                                                            |
-| --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| [Module help](../companion/HELP.md)           | Connect a controller, discover it with ADAR, place presets and understand each control. This is also the in-app help. |
-| [Example workspace](../companion/EXAMPLE.md)  | Start with both key themes, white-channel controls and offline preparation, then connect commissioned controllers.    |
-| [Compatibility and testing](LOCAL-TESTING.md) | Check the tested versions, completed checks and work still needed for hardware qualification.                         |
+| Guide                                         | Use it for                                                                                                         |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| [Quick setup](../companion/HELP.md)           | Read the connection overview, connect a controller and place the first presets. This is also the in-app help.      |
+| [Operator guide](OPERATOR-GUIDE.md)           | Understand playback, intensity, colour mixing, feedback and troubleshooting.                                       |
+| [Example workspace](../companion/EXAMPLE.md)  | Start with both key themes, white-channel controls and offline preparation, then connect commissioned controllers. |
+| [Compatibility and testing](LOCAL-TESTING.md) | Check the tested versions, completed checks and work still needed for hardware qualification.                      |
 
 ## Look up a detail
 

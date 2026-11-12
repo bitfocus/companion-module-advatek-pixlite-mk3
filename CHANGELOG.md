@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1
+
+- Shorten connection help to an overview and quick setup, with an official PixLite product image.
+- Keep detailed instructions in the linked operator guide and fix the example workspace link.
+- Update the bundled example for version 1.0.1. Runtime behaviour is unchanged.
+
 ## 1.0.0
 
 - Promote the approved module to the stable release channel.
