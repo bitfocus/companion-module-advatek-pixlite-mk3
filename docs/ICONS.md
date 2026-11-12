@@ -39,6 +39,6 @@ Both themes retain identical geometry and semantic content. Orange means matchin
 
 The toggle key selects Pause or Resume artwork from fresh reported file state. When that state is unavailable it uses the combined symbol with a clock. A red warning can also identify a failed or uncertain command from that key. The Direct operator workspace places the intensity arrows above and below the reported level; the catalogue still offers individual controls for custom layouts.
 
-Mixer dials use a compact colour strip above their dynamic percentage. RGB recall keys retain circular swatches. Both use the same channel colours. Live Mix uses an orange border when enabled and a fault badge if the mix command fails.
+Circular swatches identify fixed RGB colour recalls. Rectangular swatches identify prepared mixer channels, with the channel name and dynamic percentage. Changing a prepared value affects output only after **Recall mix**, or while **Live Mix** is enabled. The two shapes distinguish these operations; they are not interchangeable artwork styles. Live Mix uses an orange border when enabled and a fault badge if the mix command fails.
 
 Review the complete export contact sheets at native 72 px as well as enlarged. Real Stream Deck brightness and legibility still require physical checks. Native dynamic captions use Companion's font because its simple preset API has no custom font selection.
