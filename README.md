@@ -4,7 +4,7 @@ Control a commissioned PixLite Mk3 from [Bitfocus Companion](https://companion.f
 
 The module discovers controllers with ADAR, plays existing SHOWTime scenes and playlists, controls playback and intensity, recalls static colours and monitors reported state. Use one connection per controller. Playback across controllers is independent.
 
-Start with the [operator help](companion/HELP.md) for connection settings, presets and troubleshooting. Commissioning, recording, content editing and controller settings remain in Advatek software. See [compatibility and testing](docs/LOCAL-TESTING.md) for the tested scope.
+Start with the [quick setup](companion/HELP.md), then use the [operator guide](docs/OPERATOR-GUIDE.md) for detailed controls and troubleshooting. Commissioning, recording, content editing and controller settings remain in Advatek software. See [compatibility and testing](docs/LOCAL-TESTING.md) for the tested scope.
 
 ## Develop and test
 
