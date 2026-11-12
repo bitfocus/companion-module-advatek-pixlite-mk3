@@ -67,6 +67,8 @@ New Set level actions default to 100%. Connecting or migrating the module never 
 
 ## Colours
 
+Circular swatches identify fixed colour recalls. Rectangular swatches belong to the colour mixer and show prepared channel values, not a colour recall.
+
 Use **Colour: Set static playback colour** with the RGB picker and any applicable W/X values. The controller's commissioned pixel type determines RGB, RGBW or RGBWX (RGBCCT); unavailable channels are labelled and are not sent. Their fields stay editable for offline preparation. Follow the installation's W/X assignment rather than assuming warm/cool order.
 
 For a named custom recall, copy a colour key and update its action, matching colour feedback and any fixed swatch together. Editing the action alone does not recolour a fixed image. Static colour replaces playback; it does not tint a recorded scene or live input. Record scenes with the intended colours already included.

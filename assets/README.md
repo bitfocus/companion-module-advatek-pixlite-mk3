@@ -11,7 +11,7 @@ There are **78 fixed-caption designs** and **36 icon roles** in each theme, with
 - Stale: dashed outline and clock. Colour recall circles retain their configured colour.
 - Fault: red outline and white warning triangle on a red badge, for a reported mode error. Semantic fault red is `#B42318`.
 
-RGB swatches identify the recall command, not sensed light output. Palette slots use a neutral palette symbol because the slot number does not predict its colour. W/X labels describe configured channels, not an assumed warm/cool order. Fixed port, channel, slot and percentage labels are part of the control's meaning.
+Circular RGB swatches identify fixed colour recalls, not sensed light output. Rectangular swatches identify prepared colour-mixer channels; they affect output after Recall mix or while Live Mix is enabled. Keep these shapes with their corresponding controls. Palette slots use a neutral palette symbol because the slot number does not predict its colour. W/X labels describe configured channels, not an assumed warm/cool order. Fixed port, channel, slot and percentage labels are part of the control's meaning.
 
 Scene icons use play-circle; recorded-item navigation combines that symbol with previous/next markers. Playlist uses a list. Media refresh combines a list and refresh arrow; status refresh uses a single refresh arrow. Scene and playlist captions follow each button's action filename through native Companion text. They omit the extension and shorten the display only; full filenames remain in actions.
 
